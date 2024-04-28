@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .left-section,
+        .right-section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .profile-picture-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-picture-section img {
+            width: 250px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            display: block; /* Ensure the image is centered properly */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-section,
+            .right-section,
+            .profile-picture-section {
+                width: 100%;
+                text-align: center;
+            }
+
+            .profile-picture-section img {
+                width: 200px; /* Adjust the width for smaller screens */
+            }
+        }
+    </style>
+    <style>
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/04/36/58/65/360_F_436586551_t4B08iIPjUvHvWCu6T1HDfMBn9BcQcSA.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h2>About Me</h2>
+            <div class="facts-box">
+                <p>I live in: City, Country</p>
+                <p>My age is: 25 years old</p>
+                <p>My hobbies: Reading, dancing , blah</p>
+            </div>
+        </div>
+        <div class="profile-picture-section">
+            <img src="https://scontent.fcrk1-1.fna.fbcdn.net/v/t1.15752-9/439357184_1491005501774169_4499173217459388208_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFQVpjhRiJ1JY82og7MMLhSXtmAokUbYbFe2YCiRRthsUAbAND3Z8aQT_iCPnml5_3_AdccznUOgA4sPALnUs7B&_nc_ohc=aMD1FaLF3soAb4cmU-9&_nc_ht=scontent.fcrk1-1.fna&oh=03_Q7cD1QGtH32UzelCpMvnN4_gvfWsxn-uJE9m8GS6AIXK6te2bQ&oe=6655AC34" alt="Profile Picture">
+        </div>
+        <div class="right-section">
+            <h2>More About Me</h2>
+            <div class="facts-box">
+                <p>Another fact about me: Something here</p>
+                <p>And another one: Something here</p>
+                <p>One more: Something here</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
